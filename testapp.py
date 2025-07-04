@@ -49,9 +49,9 @@ class TestBiblioteca(unittest.TestCase):
     def test_buscar_por_titulo(self):
         items = [
             Libro("Cien Años de Soledad", 1, "Gabriel G.", 500),
-            Revista("Ci2encia Hoy", 2, 23)
+            Revista("Ciencia Hoy", 2, 23)
         ]
-        resultado = buscar_por_titulo(items, "cien")
+        resultado = buscar_por_titulo(items, "cien ")
         self.assertEqual(len(resultado), 1)
         self.assertEqual(resultado[0].titulo, "Cien Años de Soledad")
 
